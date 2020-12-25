@@ -30,7 +30,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	line-height: 1;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 ol, ul {
@@ -217,8 +219,6 @@ input, select, textarea {
 		margin: 2em 0 0 0;
 		background-color: #DEDEDE;
 		text-align: center;
-		line-height: 40px;
-
 	}
 
 		footer > p {
@@ -228,10 +228,12 @@ input, select, textarea {
 /* Container */
 
 	.container {
+		flex: 1;
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
-		min-height: 40vh;
+		min-height: 100vh;
+		margin-bottom: 40px;
 	}
 	.container:after{
 		content:"";
@@ -2004,7 +2006,7 @@ input, select, textarea {
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 2em 0 2em 0;
 		text-align: center;
 	}
 
@@ -2477,7 +2479,6 @@ input, select, textarea {
 					}
 
 	}
-
 
  /* object */ 
 	object, embed {
