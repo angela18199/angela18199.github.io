@@ -225,6 +225,12 @@ input, select, textarea {
 			font-size: 0.8em;
 		}
 
+	audio{
+		height: 20px;
+		width: 300px;
+		display: block;
+	}
+
 /* Container */
 
 	.container {
